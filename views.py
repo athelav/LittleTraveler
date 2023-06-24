@@ -35,6 +35,21 @@ def plane():
     return render_template("plane.html")
 
 
+@views.route("/train")
+def train():
+    return render_template("train.html")
+
+
+@views.route("/passport")
+def passport():
+    return render_template("passport.html")
+
+
+@views.route("/resources")
+def resources():
+    return render_template("resource.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'time', 'coolness': 10})
