@@ -1,0 +1,16 @@
+{% extends "index.html" %} {% block content %}
+<div class="row">
+    <div class="column">
+        <img class="floating" src="/static/leftStars.png" alt="hanging stars" style="width:100%;margin-top:-15%;">
+    </div>
+    <div class="column">
+        <a href={{ 'moreTitle' }}><button style="margin-top:20px;">TITLE!</button></a>
+        <a href={{ 'moreWelcome' }}><button style="margin-top:20px;">WELCOME!</button></a>
+        <a href={{ 'homepage' }}><button style="margin-top:20px;">HOME!</button></a>
+    </div>
+    <div class="column">
+        <img class="floating" src="/static/rightStars.png" alt="hanging stars" style="width:100%;margin-top:-15%;">
+    </div>
+</div>
+
+{% endblock content %}

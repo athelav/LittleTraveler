@@ -50,6 +50,21 @@ def resources():
     return render_template("resource.html")
 
 
+@views.route("/more")
+def more():
+    return render_template("more.html")
+
+
+@views.route("/moreTitle")
+def moreTitle():
+    return render_template("moreTitle.html")
+
+
+@views.route("/moreWelcome")
+def moreWelcome():
+    return render_template("moreWelcome.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'time', 'coolness': 10})
@@ -64,3 +79,8 @@ def get_data():
 @views.route("/go-to-home")
 def go_to_home():
     return redirect(url_for("views.home"))
+
+
+@views.route("/test")
+def test():
+    return render_template("test.html")
