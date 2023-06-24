@@ -1,7 +1,13 @@
 {% extends "index.html" %} {% block content %}
-<div class="floating subtitle">What is:</div>
-<div class="floating title">A Passport</div>
+<div class="row">
+    <div class="column">
+        <a href={{ 'homepage' }}><button class="smallButton">HOME!</button></a>
+    </div>
+    <div class="column">
+        <div class="floating subtitle">What is:</div>
+        <div class="floating title" style="font-size: 110px;">A Passport</div>
+    </div>
+</div>
 <div class="text">The plane is a very important place to do work for others. It is not a playground.</div>
-<a href={{ 'homepage' }}><button>HOME!</button></a>
 
 {% endblock content %}

@@ -1,7 +1,13 @@
 {% extends "index.html" %} {% block content %}
-<div class="floating subtitle">How to Ride:</div>
-<div class="floating title">The Train</div>
+<div class="row">
+    <div class="column">
+        <a href={{ 'homepage' }}><button class="smallButton">HOME!</button></a>
+    </div>
+    <div class="column">
+        <div class="floating subtitle">How to Ride:</div>
+        <div class="floating title" style="font-size: 110px;">The Train</div>
+    </div>
+</div>
 <div class="text">The train is a fun ride on the ground.</div>
-<a href={{ 'homepage' }}><button>HOME!</button></a>
 
 {% endblock content %}

@@ -17,7 +17,7 @@ h1 {
 .title {
     text-align: center;
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 130px;
+    font-size: 115px;
     margin-top:10px;
     margin-bottom: 30px;
     
@@ -59,6 +59,20 @@ button:focus {
   transform: translateY(-0.25em);
 }
 
+.smallButton {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 200px; 
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 50px;
+    color: #004AAD;
+    border-color: #004AAD;
+    border-width: 17px;
+    border-radius:15px;
+    background-color: white;
+
+}
 
 .columnTicket:hover,
 .columnTicket:focus {
