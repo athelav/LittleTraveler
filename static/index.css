@@ -1,22 +1,26 @@
 h1 {
     text-align: center;
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 200px; 
+    font-size: 150px;
+    margin:0%
 }
 
 .title {
-    position: absolute;
-    bottom:0px;
     text-align: center;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 200px;
+    margin-top:10px;
+    margin-bottom: 30px;
+    z-index: 2px;
     
 }
 button {
     display: block;
     margin: auto;
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 150px;
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 100px;
+    font-size: 75px;
     color: #004AAD;
     border-color: #004AAD;
     border-width: 30px;
@@ -24,3 +28,38 @@ button {
     background-color: white;
 }
 
+button:hover,
+button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 2px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
