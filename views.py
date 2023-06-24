@@ -65,6 +65,11 @@ def moreWelcome():
     return render_template("moreWelcome.html")
 
 
+@views.route("/planeExpect")
+def planeExpect():
+    return render_template("planeExpect.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'time', 'coolness': 10})

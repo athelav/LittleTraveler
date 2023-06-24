@@ -4,9 +4,8 @@ html, body {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 150px;
     margin:0%
 }
 
@@ -94,6 +93,19 @@ button:focus {
     border-radius:15px;
     background-color: white;
 
+}
+
+.travelButton {
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 400px; 
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 50px;
+    border-width: 17px;
+    border-radius:15px;
+    flex-wrap: wrap;
+    background-color: white;
 }
 
 .columnTicket:hover,

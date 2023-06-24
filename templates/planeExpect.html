@@ -1,0 +1,43 @@
+{% extends "index.html" %} {% block content %}
+<div class="row">
+    <div class="column">
+        <a href={{ 'plane' }}><button class="smallButton">BACK!</button></a>
+    </div>
+    <div class="column">
+        <div class="subtitle" style="font-size: 50px;">How to Ride: The Plane</div>
+    </div>
+    <div class="column">
+        <a href={{ 'homepage' }}><button class="smallButton">HOME!</button></a>
+    </div>
+</div>
+<div>
+    <div class="title">What to Expect:</div>
+    <div></div>
+    <div class="row">
+        <div class="column" width:"50%">
+            <div class="text" style="font-size: 25px;">
+                <ol>
+                    <li>At the airport, identify the uniforms of the workers. Only ask for help from these uniformed team member.</li>
+                </div>
+            </div>
+            <div class="column" width:"35%">
+                <img src="{{url_for('static', filename='flightAttendant.jpeg')}}" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="text" style="font-size: 25px;">
+                    <li>Write down phone numbers for your child.</li>
+                    <li>Pack games, books and money in one small carry-on.</li>
+                    <li>Food and drink service is limited, so we recommend packing snacks for your child to enjoy during their flight.</li>
+                    <li>Attach an ID card and contact information to your child’s carry-on bag or jacket.</li>
+                    <li>Fully charge any electronic devices, and don’t forget to pack chargers and headphones.</li>
+                    <li>Be sure your child knows to wait for a team member to walk them off the plane when they land (this includes older children using our service).</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
