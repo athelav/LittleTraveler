@@ -30,6 +30,11 @@ def homepage():
     return render_template("homepage.html")
 
 
+@views.route("/plane")
+def plane():
+    return render_template("plane.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'time', 'coolness': 10})
