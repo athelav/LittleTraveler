@@ -26,7 +26,7 @@ h1 {
 .subtitle {
     text-align: center;
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 40px;
+    font-size: 60px;
     margin-top:10px;
     margin-bottom: 5px;
 }
@@ -42,8 +42,8 @@ h1 {
 button {
     display: block;
     margin: auto;
-    width: 300px;
-    height: 150px;
+    width: fit-content;
+    height: fit-content;
     font-family: 'Mountains of Christmas', cursive;
     font-size: 75px;
     color: #004AAD;
@@ -59,11 +59,26 @@ button:focus {
   transform: translateY(-0.25em);
 }
 
+.regularButton {
+    display: block;
+    margin: auto;
+    height: fit-content;
+    width: fit-content; 
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 50px;
+    color: #004AAD;
+    border-color: #004AAD;
+    border-width: 20px;
+    border-radius:15px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
 .smallButton {
     display: block;
     margin: auto;
-    height: 100px;
-    width: 200px; 
+    height: fit-content;
+    width: fit-content; 
     font-family: 'Mountains of Christmas', cursive;
     font-size: 50px;
     color: #004AAD;
