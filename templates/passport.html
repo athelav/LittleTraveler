@@ -7,57 +7,65 @@
         <div class="floating subtitle">What is:</div>
         <div class="floating title" style="font-size: 110px;">A Passport</div>
     </div>
-</div>
-
-<div style="display:flex;justify-content: center;">
-<button id="prev-btn">
-    <i class="fas fa-arrow-circle-left"></i>
-</button>
-
-<div id="book" class="book">
-    <div id="p1" class="paper">
-        <div class="front">
-            <div id="f1" class="front-content">
-                <h1>Passport</h1>
-            </div>
-        </div>
-        <div class="back">
-            <div id="b1" class="back-content">
-                <h1>Back 1</h1>
-            </div>
-        </div>
-    </div>
-
-    <div id="p2" class="paper">
-        <div class="front">
-            <div id="f2" class="front-content">
-                <h1>Front 2</h1>
-            </div>
-        </div>
-        <div class="back">
-            <div id="b2" class="back-content">
-                <h1>Back 2</h1>
-            </div>
-        </div>
-    </div>
-
-    <div id="p3" class="paper">
-        <div class="front">
-            <div id="f1" class="front-content">
-                <h1>Front 3</h1>
-            </div>
-        </div>
-        <div class="back">
-            <div id="b3" class="back-content">
-                <h1>Back 3</h1>
-            </div>
-        </div>
+    <div class="column">
+        <img src="{{url_for('static', filename='passportHolder.png')}}" style="height:250px;float:center;"/>
     </div>
 </div>
+<div class="text">Click on the arrow buttons</div>
+<div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+        <div style="display:flex;justify-content: center;">
+        <button id="prev-btn">
+            <i class="fas fa-arrow-circle-left"></i>
+        </button>
 
-<button id="next-btn">
-    <i class="fas fa-arrow-circle-right"></i>
-</button>
+        <div id="book" class="book">
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <img src="{{url_for('static', filename='earth.png')}}" alt="earth" style="height:250px;"/>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <h1>A passport allows you to travel to different places.</h1>
+                    </div>
+                </div>
+            </div>
 
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <img src="{{url_for('static', filename='flyingPlane.png')}}" alt="plane" style="height:250px;"/>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <img src="{{url_for('static', filename='passportStamp.jpeg')}}" alt="plane" style="height:250px;"/>
+                    </div>
+                </div>
+            </div>
+
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <h1>You get a stamp to show where you have visited.</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <h1>Safe Travels!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="next-btn">
+            <i class="fas fa-arrow-circle-right"></i>
+        </button>
+    </div>
+    </div>
 </div>
 {% endblock content %}
