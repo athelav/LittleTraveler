@@ -85,6 +85,11 @@ def contact():
     return render_template("contact.html")
 
 
+@views.route("/quiz")
+def quiz():
+    return render_template("quiz.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'time', 'coolness': 10})
