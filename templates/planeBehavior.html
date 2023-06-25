@@ -1,0 +1,45 @@
+{% extends "index.html" %} {% block content %}
+<div class="row">
+    <div class="column">
+        <a href={{ 'plane' }}><button class="smallButton">BACK!</button></a>
+    </div>
+    <div class="column">
+        <div class="subtitle" style="font-size: 50px;">How to Ride: The Plane</div>
+    </div>
+    <div class="column">
+        <a href={{ 'homepage' }}><button class="smallButton">HOME!</button></a>
+    </div>
+</div>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="{{url_for('static', filename='womenPassenger.jpeg')}}" style="height:250px;width:250px;float:right;"/>
+            </div>
+            <div class="column">
+                <div class="title">Rules/Behavior</div>
+            </div>
+        </div>
+    </div>
+        <div class="text" style="font-size: 35px;">
+            Uniformed Team Members will help you when you need it but they have to take care of the passengers as well!
+            You can be a courteous Traveler by following the safety rules of the plane. Here are some examples:
+            </div>
+            <br>
+            <div class="container">
+                <img src="{{url_for('static', filename='seatbeltLight.jpeg')}}" style="height:250px;width:250px;float:right;"/></div>
+        <div class="text" style="font-size: 30px;">
+            <ol>
+                <li>Keep your seatbelt on when the seatbelt light is on.</li>
+                <li>Be mindful of your noise level, especially if people are sleeping.</li>
+                <li>When the flight is over, wait for the Uniformed Team Member to give you directions.</li>
+                <li>In a time of an emergency, remain calm, breathe, and listen to the directions of the Uniformed Team Member.</li>
+            </ol>
+        </div>
+    <div class="text" style="font-size: 35px;">
+        By behaving like a helpful Traveler, you will not only have a fantastic flight, but you will make your fellow passengers happy as well!
+    </div>
+    </div>
+</div>
+
+{% endblock content %}

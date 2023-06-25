@@ -116,6 +116,7 @@ button:focus {
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 .column {
     float: left;
@@ -240,3 +241,5 @@ a {
     html { font-size: 14px; }
     .draggable-elements { margin: 1.5rem; }
   }
+
+  

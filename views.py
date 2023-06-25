@@ -70,6 +70,11 @@ def planeExpect():
     return render_template("planeExpect.html")
 
 
+@views.route("/planeBehavior")
+def planeBehavior():
+    return render_template("planeBehavior.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'time', 'coolness': 10})
