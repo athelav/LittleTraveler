@@ -1,0 +1,27 @@
+{% extends "index.html" %} {% block content %}
+<div class="row">
+    <div class="column">
+        <a href={{ 'homepage' }}><button class="smallButton">HOME!</button></a>
+    </div>
+    <div class="column">
+        <div class="floating title">Creator!</div>
+    </div>
+    <div class="column">
+       <img src="{{url_for('static', filename='starBundle.png')}}" style="height:275px;"/>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="{{url_for('static', filename='lePetitPrince.png')}}" style="height:250px;float:right;"/>
+    </div>
+    <div class="column">
+        <div class="text">Creator: Athela Grace Villaruel</div>
+        <div class="text">Date: June 2023</div>
+    </div>
+    <img src="{{url_for('static', filename='athelaPicture.png')}}" style="height:250px;align-items:center;justify-content:center;"/>
+</div>
+<div class="text" style="font-size:35px;">Athela is a student at Drexel University studying computer science. "Little Traveler" was created in hopes of making the basics of using public transportation easier and straightforward for new travelers of all ages to learn. Inspired by "The Little Prince" by Antoine de Saint-Exupéry, travel with kindness and childlike wonderment.</div>
+<div class="text">Contact: athelavill@gmail.com</div>
+
+{% endblock content %}

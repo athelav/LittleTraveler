@@ -80,6 +80,11 @@ def moreResource():
     return render_template("moreResource.html")
 
 
+@views.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
 @views.route("/json")
 def get_json():
     return jsonify({'name': 'time', 'coolness': 10})
