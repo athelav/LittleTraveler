@@ -1,0 +1,20 @@
+{% extends "index.html" %} {% block content %}
+<div class="row">
+    <div class="column">
+        <a href={{ 'homepage' }}><button class="smallButton">HOME!</button></a>
+    </div>
+    <div class="column">
+        <div class="floating title">Resources</div>
+    </div>
+</div>
+<div class="text"">All information is stated as from the following sources:</div>
+<div class="text">
+    <a href="https://help.cbp.gov/s/article/Article-449?language=en_US">US Customs and Border Protection</a><br>
+    <a href="https://www.aa.com/i18n/travel-info/special-assistance/unaccompanied-minors.jsp">American Airlines</a><br>
+    <a href="https://www.tsa.gov/travel/special-procedures/traveling-children#:~:text=Children%2012%20and%20under%20can,the%20walk%2Dthrough%20metal%20detector">Transportation Security Transportation</a><br>
+</div>
+
+<center>
+    <img src="{{url_for('static', filename='airportCheck.jpeg')}}" style="height:400px;"/>
+</center>
+{% endblock content %}
