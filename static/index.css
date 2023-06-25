@@ -160,9 +160,10 @@ i {
     margin-bottom: 10px;
 }
 .columnTicket {
-    float: left;
-    width: 25%;
-    margin-top: 0px;
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+  margin-bottom: 10px;
 }
 
 .row::after {
